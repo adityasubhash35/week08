@@ -195,3 +195,79 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+# ===================================
+# SECURITY: Secrets and Credentials
+# ===================================
+# As per Week 9.2C improvements - preventing accidental commit of sensitive files
+
+# Azure credentials and service principals
+azure_credentials.json
+sp.json
+*.pem
+
+# All JSON files (potential credentials)
+*.json
+
+# Environment files
+.env
+*.env
+.env.*
+*.env.*
+
+# Secret files
+*.secret
+*.secrets
+*_secret
+*_secrets
+secrets/
+.secrets/
+
+# Certificate files
+*.crt
+*.key
+*.pfx
+*.p12
+
+# SSH keys
+id_rsa
+id_rsa.pub
+id_dsa
+id_dsa.pub
+id_ecdsa
+id_ecdsa.pub
+id_ed25519
+id_ed25519.pub
+*.ppk
+
+# Kubernetes secrets
+*secret*.yaml
+*secret*.yml
+
+# AWS credentials
+.aws/
+*.aws
+
+# Google Cloud credentials
+*gcloud*
+*gcp*
+*.gcp
+
+# Database credentials
+*database*.env
+*db*.env
+
+# API keys and tokens
+*api*key*
+*apikey*
+*token*
+.token
+
+# Password files
+*password*
+*passwd*
+
+# Backup files that might contain credentials
+*.bak
+*.backup
+*.old
